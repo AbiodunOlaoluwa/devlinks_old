@@ -1,6 +1,6 @@
 body {
   display: flex;
-  padding: 6rem 30.125rem 6rem 30.125rem;
+  padding: 6.5rem 30.125rem 2.2rem 30.125rem;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.1875rem;
+  gap: 1.1875rem;
 }
 
 .logoBar {
