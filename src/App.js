@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Links from './Pages/Links'
+import Login from './Pages/Login';
+import CreateAccount from './Pages/CreateAccount';
+import Preview from './Pages/Preview';
+import Profile from './Pages/Profile';
+import Layout from './Layout';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Links />} />
+          <Route path="/createAccount" element={<CreateAccount />} />
+          <Route path="/preview" element={<Preview />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

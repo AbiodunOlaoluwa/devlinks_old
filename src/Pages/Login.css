@@ -1,0 +1,236 @@
+body {
+  display: flex;
+  padding: 6rem 30.125rem 6rem 30.125rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: var(--Light-Grey, #fafafa);
+}
+
+.loginFormCard {
+  width: 30rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.1875rem;
+}
+
+.logoBar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+}
+
+.devlinks {
+  width: 8.4375rem;
+  height: 1.64063rem;
+  flex-shrink: 0;
+  fill: var(--Dark-Grey, #333);
+}
+
+.formContainer {
+  width: 100% 29.75rem;
+  height: auto 30.125rem;
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  align-self: stretch;
+}
+
+.headingM {
+  align-self: stretch;
+  color: var(--Dark-Grey, #333);
+  width: 100% 24.75rem;
+  height: auto 3rem;
+
+  /* Heading M */
+  font-family: "Instrument Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 3rem */
+}
+
+.header > p {
+  align-self: stretch;
+  color: var(--Grey, #737373);
+
+  /* Body M */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.emailInput {
+  display: flex;
+  width: 24.75rem;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Borders, #d9d9d9);
+  background: var(--White, #fff);
+}
+
+.emailPic {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.emailInputFieldLbl {
+  width: 24.75rem;
+  color: var(--Dark-Grey, #333);
+  /* Body S */
+  font-family: "Instrument Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.emailInputField {
+  flex: 1 0 0;
+  color: var(--Dark-Grey, #333);
+
+  /* Body M */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  border: none;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  opacity: 0.5;
+}
+
+.emailInputField:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.passwordInputFieldLbl {
+  width: 24.75rem;
+  color: var(--Dark-Grey, #333);
+  /* Body S */
+  font-family: "Instrument Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.pWrdPic {
+  width: 1rem;
+  height: 1rem;
+}
+
+.passwordInputContainer {
+  width: 100%;
+}
+
+.passwordInput {
+  /* width: 100%; */
+  display: flex;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  gap: 0.75rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Borders, #d9d9d9);
+  background: var(--White, #fff);
+}
+
+.passwordInputField {
+  flex: 1 0 0;
+  color: var(--Dark-Grey, #333);
+
+  /* Body M */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  border: none;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  opacity: 0.5;
+}
+
+.passwordInputField:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.loginButtonContainer {
+  width: 100%;
+}
+
+.loginButton {
+  border: 0 none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  padding: 0.6875rem 1.6875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--Purple, #633cff);
+  color: var(--White, #fff);
+  /* Heading S */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.5rem */
+}
+
+.createAccountLinkText {
+  align-self: stretch;
+  color: var(--Grey, #737373);
+  text-align: center;
+  /* Body M */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
+
+.createAccountLinkContainer {
+    width: 100%;
+}
+
+.createAccountLink {
+  color: var(--Purple, #633cff);
+  /* Body M */
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+a {
+    color: var(--Purple, #633cff);
+    text-decoration: none;
+}
