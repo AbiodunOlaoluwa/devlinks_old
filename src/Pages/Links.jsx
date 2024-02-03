@@ -1,10 +1,10 @@
 import React from 'react';
-import './Home.css'
+import './Links.css'
 
-const Links = () => {
+const Links = (props) => {
   return (
-    <div>
-        <h1>This is the Links page</h1>
+    <div className="linksContainer">
+      
     </div>
   )
 }
