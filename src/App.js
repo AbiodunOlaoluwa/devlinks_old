@@ -15,6 +15,7 @@ function App() {
   const [craPasswordInput, setCraPasswordInput] = useState("");
   const [loginEmailInput, setLoginEmailInput] = useState("");
   const [loginPasswordInput, setLoginPasswordInput] = useState("")
+  const [createLinkObjects, setCreateLinkObjects] = useState([])
 
   
 
@@ -22,9 +23,9 @@ function App() {
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={isLoggedIn ? <Links /> : <Navigate to="/login" replace />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/preview" element={<Preview />} />
+          <Route path="/" element={isLoggedIn ? <Links setCreateLinkObjects={setCreateLinkObjects} /> : <Navigate to="/login" replace />} />
+          <Route path="/profile" element={isLoggedIn ? <Profile createLinkObjects={createLinkObjects} /> : <Navigate to="/login" replace />} />
+          <Route path="/preview" element={isLoggedIn ? <Preview /> : <Navigate to="/login" replace />} />
           <Route path="*" element={isLoggedIn ? <Navigate to="/" /> : <Navigate to="/login" />} />
         </Route>
         <Route path="/createAccount" element={<CreateAccount pwrdInput={craPasswordInput} emailInput={craEmailInput} setpwrdInput={setCraPasswordInput} setEmailInput={setCraEmailInput} />} />
